@@ -296,3 +296,103 @@ cd master-kschool
 ll
 git status
 cp ~/.history .
+git status
+git add -u
+git commit -m "Update of history file"
+git status
+git log
+cd ~/data/shell
+ll
+cat Text_example.txt
+grep this Text_example.txt
+grep -n this Text_example.txt
+grep -nv this Text_example.txt
+grep -c this Text_example.txt
+grep -cv this Text_example.txt
+grep -i this Text_example.txt
+grep -n empty Text_example.txt
+grep -nB 1 empty Text_example.txt
+grep -nB 3 empty Text_example.txt
+grep -nA 1 empty Text_example.txt
+echo Sunday | sed  ssdaysnights
+echo Sunday | sed  's/day/night/'
+echo day.day | sed 's/day/night'
+echo day.day | sed 's/day/night/'
+echo day.day | sed 's/day/night/g'
+cat Text_example.txt| sed 's/this/THAT/gi'
+cp Text_example.txt Text_example_copy.txt
+sed -i 's/this/THAT/gi' Text_example_copy.txt
+cat Text_example_copy.txt
+seq 10 15 | sed '3d'
+seq 10 15 | sed '/13/d'
+seq 10 15 | sed '3!d'
+seq 10 15 > raw
+cat raw
+cat -n raw
+cat raw | sed '5!d'
+cat raw | sed '5!d' > linea_con_problema.txt
+cat raw | sed '5d' > linea_sin_problema.txt
+cat linea_sin_problema.txt
+cat linea_con_problema.txt
+cd ../opentraveldata
+ll
+csvlook
+csvlook -d "^" optd_aircraft.csv | less
+csvlook -d "^" optd_aircraft.csv | less -S
+csvstat -d "^" optd_aircraft.csv | less -S
+head -100 optd_por_public.csv| csvstat -d "^" | less -S
+csvstat -d "^" -c manufacturer optd_aircraft.csv
+csvcut -d "^" -c manufacturer optd_aircraft.csv | head
+csvstat -d "^" -c city_code_list optd_aircraft.csv | less -S
+csvstat -d "^" -c city_code_list optd_por_public.csv | less -S
+csvstat -d "^" -c 1-3 optd_por_public.csv | head
+csvcut -d "^" -c 1-3 optd_por_public.csv | head
+csvcut -d "^" -c 1-3 optd_aircraft.csv | head
+csvcut -d "^" -c 1-3 optd_aircraft.csv | csvstat -d ','
+csvgrep -d "^" -c iata_code -m 380 optd_aircraft.csv
+csvgrep -d "^" -c 1-8 -m 380 optd_aircraft.csv
+csvsql -d "^" optd_aircraft.csv
+csvsql -d "^" -i oracle optd_aircraft.csv
+csvsql -d "^" -i postgres optd_aircraft.csv
+csvsql -d "^" -i postgresql optd_aircraft.csv
+csvsql -d "^" -i oracle optd_aircraft.csv > sql_command.txt
+ll
+pwd
+zip text_files.zip  first_10_lines.txt largest_file.txt line_number_10.txt sql_command.txt uniq_example.txt 
+ll
+zipinfo text_files.zip
+zcat text_files.zip
+gzip first_10_lines.txt largest_file.txt line_number_10.txt sql_command.txt uniq_example.txt 
+ll
+zcat first_10_lines.txt.gz
+zcat largest_file.txt.gz
+zless sql_command.txt.gz
+gunzip first_10_lines.txt.gz largest_file.txt.gz line_number_10.txt.gz sql_command.txt.gz uniq_example.txt.gz 
+ll
+bzip optd_aircraft.csv optd_aircraft_delimiter_coma.csv optd_airlines.csv optd_por_public.csv ref_airline_nb_of_flights.csv 
+ll
+bzip2 optd_aircraft.csv optd_aircraft_delimiter_coma.csv optd_airlines.csv optd_por_public.csv ref_airline_nb_of_flights.csv 
+ll
+bunzip2 optd_aircraft.csv.bz2 optd_aircraft_delimiter_coma.csv.bz2 optd_airlines.csv.bz2 optd_por_public.csv.bz2 ref_airline_nb_of_flights.csv.bz2 
+ll
+tar -czvf opentraveldata.tar optd_aircraft.csv optd_aircraft_delimiter_coma.csv optd_airlines.csv optd_por_public.csv ref_airline_nb_of_flights.csv 
+ll
+tar -cjvf opentraveldata2.tar optd_aircraft.csv optd_aircraft_delimiter_coma.csv optd_airlines.csv optd_por_public.csv ref_airline_nb_of_flights.csv 
+ll
+mkdir tar1
+mkdir tar2
+mv opentraveldata.tar tar1
+mv opentraveldata2.tar tar2
+ll
+cd tar1
+ll
+tar -xvf opentraveldata.tar
+ll
+cd ../tar2
+tar -xvf opentraveldata2.tar
+ll
+cd ~/repos
+cd master-kschool
+ll
+git status
+cp ~/.history .
