@@ -1,0 +1,161 @@
+echo hola
+echo $SHELL
+echo $TERM
+date
+echo date
+echo $date
+echo "date"
+echo $(date)
+ñ
+clear
+cat /etc/os-release
+pwd
+ls
+cat data/README.md 
+cat data/shell/Finn.txt
+cat data/shell/Text_example.txt
+ls -lart
+chmod 777 books
+ls -lart
+pwd
+mkdir mi_directorio
+ll
+touch mi_directorio/archivo
+ll mi_directorio/archivo
+mkdir -p mi_directorio/dir_2/dir_3
+lsmi_directorio/dir_2/dir_3
+ll mi_directorio/dir_2
+ll mi_directorio/dir_2/dir_3
+pwd
+mkdir first_dir
+touch first_dir/text_file.txt
+cd first_dir
+ll
+chmod 745 text_file.txt
+ll
+chmod 763 text_file.txt
+ll
+mkdir sub1
+mkdir sub2
+mkdir text_file
+ll
+chmod 712 text_file.txt
+ll
+cp text_file.txt sub1
+mv text_file.txt sub2/text_file.txt.2
+cp -a sub1 /sub3
+sudo cp -a sub1 /sub3
+ll
+ll sub1
+cd ..
+ll
+cd first_dir
+ll
+cd text_file
+ll
+cd ..
+cd sub
+cd sub2
+ll
+cd ..
+ll
+mv sub2/text_file.txt.2 /home/dsc/first_dir/sub2/text_file.txt.backup
+ll
+cd sub2
+l
+ll
+cd ..
+ll
+cd ..
+ll
+rm -rf mi_directorio
+ll
+chmod 676 first_dir/sub1/text_file.txt
+cd first_dir
+l
+ll
+cd sub
+cd sub1
+ll
+cd ../sub2
+ll
+mv text_file.txt.backup ../../first_dir/.text_file.txt.backup
+cd ../../first_dir
+ll
+ls -a
+rm -rf sub2
+ll
+clear
+ll
+pwd
+cd ..
+ll
+mkdir repos
+cd repos
+ll
+git config --global user.name "Roberto Manzano"
+git config --global user.mail robertomanzanolopez@gmail.com
+git clone https://github.com/robertomanzanolopez/master-kschool.git
+ls
+cd master-kschool
+ll
+cat README.md
+git diff
+git add README.md
+git status
+git commit
+cd 
+cat .gitconfig
+cd -
+git config --global user.email robertomanzanolopez@gmail.com
+cd 
+cat .gitconfig
+sudo apt install gedit
+ll
+edit .gitconfig
+gedit .gitconfig
+cd -
+git commit
+git status
+git push
+robertomanzanolopez
+git push
+git status
+git push
+git status
+ll
+cd first_dir
+ll
+cd sub1
+ll
+gedit text_file.txt
+ll
+cd ..
+ll
+cd ..
+ll
+ll -a
+gedit .zshrc
+echo $EDITOR
+ll
+la -a
+ll -a
+cat .history
+hidtory
+history
+history -30
+ll
+ls repos
+cd repos
+ll
+cd master-kschool
+git remote -v
+cat .gitconfig
+ls -a
+cat .gitconfig
+pwd
+ll
+git status
+cp ~/.history .
+ll
+cp /home/dsc/.history .
