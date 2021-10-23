@@ -159,3 +159,140 @@ git status
 cp ~/.history .
 ll
 cp /home/dsc/.history .
+ll
+ll -a
+git status
+git add .history
+git status
+git commit
+git push
+git status
+cd
+less .history
+less -n .history
+less -l .history
+less .history
+less -N .history
+cd data/opentraveldata
+ll
+head optd_aircraft.csv
+head -n 30 optd_aircraft.csv
+tail optd_aircraft.csv
+tail -3 optd_aircraft.csv
+tail -n 3 optd_aircraft.csv
+tail -n -3 optd_aircraft.csv
+tail -n +3 optd_aircraft.csv
+wc
+clear
+pwd
+wc optd_aircraft.csv
+clear
+echo "How much word do I have"
+echo "How much word do I have" | wc -w
+echo "How much word do I have" | wc | wc -w
+cat optd_aircraft.csv | wc
+head optd_aircraft.csv | wc
+cat -n optd_aircraft.csv | head > first_10_lines.txt
+ll
+cat first_10_lines.txt
+ll
+cat first_10_lines.txt
+cat -n optd_aircraft.csv | tail >> first_10_lines.txt
+cat first_10_lines.txt
+cat -n optd_aircraft.csv | head | tail -1 > line_number_10.txt
+ll
+cat -n optd_aircraft.csv | head | tail -1
+cat -n optd_aircraft.csv | head | tail -9
+echo "This is the 10th line" >> line_number_10.txt
+cat line_number_10.txt
+echo "$(date)"
+echo "Timestamp:$(date)"
+echo "Timestamp:$(date)" >> line_number_10.txt
+cat line_number_10.txt
+wc -l < line_number_10.txt
+ls -lart
+ls -as
+ls -las
+ls -laS
+ls -laS | head -1
+ls -laS | head -2
+ls -laS | head -2 | tail -1
+ls -laS | head -2 | tail -1 > largest_file.txt
+ll
+cat -n 5 /home/dsc/data/shell/Finn.txt
+cat -5 /home/dsc/data/shell/Finn.txt
+head -n 5 /home/dsc/data/shell/Finn.txt
+head -n 5 /home/dsc/data/shell/Finn.txt | wc -w
+head -n 3 /home/dsc/data/shell/Text_example.txt
+head -N 3 /home/dsc/data/shell/Text_example.txt
+less -N 3 /home/dsc/data/shell/Text_example.txt
+ll
+clear
+ll
+seq 1 10
+seq 1 2 10
+seq 1 2 10 > uniq_example.txt
+seq 1 10 >> uniq_example.txt
+cat uniq_example.txt
+uniq uniq_example.txt
+cat uniq_example.txt| uniq
+uniq --help
+sort uniq_example.txt
+sort uniq_example.txt | uniq
+sort -n uniq_example.txt
+sort -n uniq_example.txt | uniq
+sort -n uniq_example.txt
+sort -nu uniq_example.txt
+sort -n uniq_example.txt | uniq -c
+sort -n uniq_example.txt | uniq -d
+cd -
+ll
+cd data/shell
+ll
+cd ..
+cd opentraveldata
+ll
+sort -t
+sort -t "^" -k 6r,6 optd_aircraft.csv
+sort -t "^" -k 2r,2 -u  optd_aircraft.csv
+sort -t "^" -k 2r,2 -u  optd_aircraft.csv | wc
+sort -t "^" -k 2 -u  optd_aircraft.csv
+sort -t "^" -k 2 -u  optd_aircraft.csv | wc
+cd ~/
+ll
+cd data/opentraveldata
+ll
+head optd_aircraft.csv
+head optd_aircraft.csv | sort -t "^" -k 7
+head optd_aircraft.csv | sort -t "^" -k 7r,7
+cat optd_aircraft.csv | sort -t "^" -k 7r,7
+cat optd_aircraft.csv | sort -t "^" -k 7r,7 | head -1
+cat optd_aircraft.csv | sort -t "^" -k 7r,7 
+sort -t "^" -k 7r,7 optd_aircraft.csv| head -1
+sort -t "^" -k 7r,7 optd_aircraft.csv| head 1
+sort -t "^" -k 7r,7 optd_aircraft.csv | head -2
+sort -t "^" -k 7rn,7 optd_aircraft.csv | head -2
+sort -t "^" -k 7rn,7 optd_aircraft.csv | head -1
+cut -d "^" -f 1-3,5 optd_aircraft.csv|head -5
+cut -d "^" -f 3 optd_aircraft.csv|sort|uniq|wc
+cut -d "^" -f 2 optd_aircraft.csv|sort|uniq|wc
+cut -d "^" -f 1-8 --output-delimiter=","  optd_aircraft.csv
+cut -d "^" -f 2 optd_aircraft.csv > optd_aircraft_delimiter_coma.csv
+ll
+head optd_aircraft_delimiter_coma.csv
+cut -d "^" -f 1-8 optd_aircraft.csv > optd_aircraft_delimiter_coma.csv
+head optd_aircraft_delimiter_coma.csv
+ll
+echo "master data science" | tr a A
+echo "master     data      science" | tr -s " "
+echo "master     data      science" | tr -d " "
+head optd_por_public.csv
+head 1 optd_por_public.csv
+head -n 1 optd_por_public.csv
+head -n 1 optd_por_public.csv | tr "^" "\n" | wc -l
+cd repos
+ll
+cd master-kschool
+ll
+git status
+cp ~/.history .
